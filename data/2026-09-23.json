@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "generatedAt": "2026-09-23 22:00:03 CST",
+  "generatedAt": "2026-09-23 22:02:00 CST",
   "timezone": "Asia/Shanghai",
   "bots": [
     {
@@ -149,13 +149,15 @@
       "id": "chat",
       "name": "chat",
       "status": "正常",
-      "lastActive": "2026-09-23 21:55:20 CST",
+      "lastActive": "2026-09-23 22:02:00 CST",
       "highlights": [
-        "确认可读同账号其他 Bot 会话（ReadTranscript）并支持 GitHub Pages 面板",
-        "接到「Bot 总控面板」需求：汇总各 Bot 当日要点/链接/阻塞/状态",
-        "已写页面骨架与例行任务配置，正在汇总各 Bot 今日会话摘要"
+        "确认可读同账号其他 Bot 会话，并支持 GitHub Pages 面板",
+        "完成「Bot 总控面板」第一版：当日摘要、例行任务写死配置、近7天切换",
+        "已发布 GitHub Pages，并加每天 22:30 自动汇总例行任务"
       ],
-      "links": [],
+      "links": [
+        "https://lorenzopapa2.github.io/orbit-ledger-x7/"
+      ],
       "blockers": []
     }
   ]
