@@ -20,12 +20,35 @@
 
   let dates = [];
   let routinesByName = {};
+  let openBlockers = [];
   let currentDate = null;
+  let latestDate = null;
 
   function statusClass(s) {
-    if (s === "卡住") return "stuck";
+    if (s === "漏跑") return "missed";
+    if (s === "失败" || s === "卡住") return "fail";
+    if (s === "部分失败") return "partial";
     if (s === "空闲") return "idle";
     return "ok";
+  }
+
+  function normalizeBlocker(botName, x) {
+    if (x && typeof x === "object") {
+      return {
+        bot: botName,
+        key: x.key || `${botName}:${x.text || ""}`,
+        text: x.text || String(x),
+        since: x.since || null,
+        days: x.days || 1,
+      };
+    }
+    return {
+      bot: botName,
+      key: `${botName}:${x}`,
+      text: String(x),
+      since: null,
+      days: 1,
+    };
   }
 
   function escapeHtml(str) {
@@ -66,26 +89,52 @@
     });
   }
 
+  async function loadOpenBlockers() {
+    try {
+      const res = await fetch("data/open-blockers.json", { cache: "no-store" });
+      if (!res.ok) {
+        openBlockers = [];
+        return;
+      }
+      const data = await res.json();
+      openBlockers = data.items || [];
+    } catch (_) {
+      openBlockers = [];
+    }
+  }
+
   async function loadIndex() {
     const res = await fetch("data/index.json", { cache: "no-store" });
     const data = await res.json();
     dates = (data.dates || []).slice().sort();
-    // keep last 7
     if (dates.length > 7) dates = dates.slice(-7);
-    currentDate = data.latest && dates.includes(data.latest)
+    latestDate = data.latest && dates.includes(data.latest)
       ? data.latest
       : dates[dates.length - 1];
+    currentDate = latestDate;
     fillDateSelect();
     if (currentDate) els.dateSelect.value = currentDate;
   }
 
-  function renderNeeds(bots) {
+  function collectNeeds(bots, date) {
+    // Latest day prefers persistent open-blockers (deduped across days).
+    if (date === latestDate && openBlockers.length) {
+      return openBlockers.map((it) => ({
+        bot: it.bot,
+        text: it.text,
+        days: it.days || 1,
+        key: it.key,
+      }));
+    }
     const items = [];
     bots.forEach((b) => {
-      (b.blockers || []).forEach((x) => {
-        items.push({ bot: b.name, text: x });
-      });
+      (b.blockers || []).forEach((x) => items.push(normalizeBlocker(b.name, x)));
     });
+    return items;
+  }
+
+  function renderNeeds(bots, date) {
+    const items = collectNeeds(bots, date);
     if (!items.length) {
       els.needsSection.hidden = true;
       els.needsList.innerHTML = "";
@@ -93,12 +142,16 @@
     }
     els.needsSection.hidden = false;
     els.needsList.innerHTML = items
-      .map(
-        (it) =>
-          `<li><span class="bot-tag">${escapeHtml(it.bot)}</span>${escapeHtml(
-            it.text
-          )}</li>`
-      )
+      .map((it) => {
+        const days = it.days && it.days > 1
+          ? `<span class="days-tag">第 ${it.days} 天</span>`
+          : it.days === 1
+            ? `<span class="days-tag">第 1 天</span>`
+            : "";
+        return `<li><span class="bot-tag">${escapeHtml(it.bot)}</span>${escapeHtml(
+          it.text
+        )}${days}</li>`;
+      })
       .join("");
   }
 
@@ -133,27 +186,61 @@
           .join("")}</ul>`
       : `<p class="empty">无公开链接</p>`;
 
-    const blockers = bot.blockers || [];
+    const blockers = (bot.blockers || []).map((x) => normalizeBlocker(bot.name, x));
     const blockersHtml = blockers.length
       ? `<div><p class="section-title">待办</p><ul class="blockers">${blockers
-          .map((x) => `<li>${escapeHtml(x)}</li>`)
+          .map((x) => {
+            const days =
+              x.days && x.days >= 1
+                ? `<span class="days-tag">第 ${x.days} 天</span>`
+                : "";
+            return `<li>${escapeHtml(x.text)}${days}</li>`;
+          })
           .join("")}</ul></div>`
       : "";
+
+    const formatTag =
+      bot.formatOk === false
+        ? `<span class="format-warn">未按格式</span>`
+        : "";
+
+    const statusLineHtml = bot.statusLine
+      ? `<div><p class="section-title">状态行</p><p class="status-line">${escapeHtml(
+          bot.statusLine
+        )}</p></div>`
+      : "";
+
+    const rulesHtml = `<div>
+      <p class="section-title">规则文件</p>
+      ${
+        bot.rulesPath
+          ? `<p class="rules-line"><code>${escapeHtml(
+              bot.rulesPath
+            )}</code>${
+              bot.rulesUpdated
+                ? ` · 更新 ${escapeHtml(bot.rulesUpdated)}`
+                : ""
+            }</p>`
+          : `<p class="empty">尚未读到 RULES.md / 规则文件</p>`
+      }
+    </div>`;
 
     return `<article class="card">
       <div class="card-head">
         <div>
-          <h3>${escapeHtml(bot.name)}</h3>
+          <h3>${escapeHtml(bot.name)}${formatTag}</h3>
           <div class="meta">最后活跃 · ${escapeHtml(bot.lastActive || "—")}</div>
         </div>
         <span class="badge ${statusClass(bot.status)}">${escapeHtml(
           bot.status || "—"
         )}</span>
       </div>
+      ${statusLineHtml}
       <div>
         <p class="section-title">例行任务</p>
         ${routineHtml}
       </div>
+      ${rulesHtml}
       <div>
         <p class="section-title">今日要点</p>
         ${highlightsHtml}
@@ -183,18 +270,15 @@
     const data = await res.json();
     const bots = sortBots(data.bots || []);
     const active = bots.filter((b) => b.status !== "空闲").length;
-    const blockerCount = bots.reduce(
-      (n, b) => n + ((b.blockers && b.blockers.length) || 0),
-      0
-    );
+    const needs = collectNeeds(bots, date);
 
     els.statBots.textContent = String(bots.length);
     els.statActive.textContent = String(active);
-    els.statBlockers.textContent = String(blockerCount);
+    els.statBlockers.textContent = String(needs.length);
     els.statGen.textContent = (data.generatedAt || "—").replace(" CST", "");
     els.footNote.textContent = `日期 ${date} · ${bots.length} bots`;
 
-    renderNeeds(bots);
+    renderNeeds(bots, date);
     els.botGrid.innerHTML = bots.map(renderCard).join("");
   }
 
@@ -211,6 +295,7 @@
   (async function init() {
     try {
       await loadRoutines();
+      await loadOpenBlockers();
       await loadIndex();
       if (!currentDate) {
         els.botGrid.innerHTML = `<p class="empty">尚无汇总数据</p>`;

@@ -110,3 +110,24 @@ body {
   .summary { grid-template-columns: repeat(2, 1fr); }
   .brand h1 { font-size: 1.15rem; }
 }
+.badge.partial { background: rgba(255,184,77,.18); color: #ffb84d; }
+.badge.missed { background: rgba(255,107,107,.22); color: #ff8a8a; }
+.badge.fail { background: rgba(255,107,107,.18); color: var(--stuck); }
+.format-warn {
+  display: inline-block; margin-left: 6px; font-size: .7rem; font-weight: 600;
+  color: #ffb84d; background: rgba(255,184,77,.12); border-radius: 6px; padding: 1px 6px;
+  vertical-align: middle;
+}
+.days-tag {
+  display: inline-block; margin-left: 6px; font-size: .75rem; color: #ffb199;
+  background: #4a2a20; border-radius: 6px; padding: 1px 6px;
+}
+.rules-line { font-size: .85rem; color: var(--muted); word-break: break-all; }
+.rules-line code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .8rem; color: #c5d0e6; background: #121826; padding: 1px 6px; border-radius: 4px;
+}
+.status-line {
+  font-size: .8rem; color: var(--muted); background: #121826; border-radius: 8px;
+  padding: 8px 10px; margin: 0; word-break: break-word;
+}

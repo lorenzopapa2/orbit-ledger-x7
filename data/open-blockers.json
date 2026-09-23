@@ -1,0 +1,53 @@
+{
+  "updatedAt": "2026-09-23 22:15:00 CST",
+  "items": [
+    {
+      "bot": "珠海学院",
+      "key": "珠海学院:今日截止：编程作业1（三个 hello world）需确认是否已交",
+      "text": "今日截止：编程作业1（三个 hello world）需确认是否已交",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "bot": "新港人",
+      "key": "新港人:YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
+      "text": "YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "bot": "新港人",
+      "key": "新港人:小红书每日发布例行仍为停用",
+      "text": "小红书每日发布例行仍为停用",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "bot": "Hermes",
+      "key": "Hermes:劳工处数据源异常（last_seen=0），简报暂以 JobsDB + 续推名单为准",
+      "text": "劳工处数据源异常（last_seen=0），简报暂以 JobsDB + 续推名单为准",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "bot": "境外医疗",
+      "key": "境外医疗:对标号宫格报错，新片 ID 暂拿不到；旧主页 hangzhouhealth 仍找不到",
+      "text": "对标号宫格报错，新片 ID 暂拿不到；旧主页 hangzhouhealth 仍找不到",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "bot": "shopify",
+      "key": "shopify:5 篇 Shopify Journal 已写好但未发布：需在已授权 Shopify 的电脑打开 Grok Bot 桌面端并回复「好了」",
+      "text": "5 篇 Shopify Journal 已写好但未发布：需在已授权 Shopify 的电脑打开 Grok Bot 桌面端并回复「好了」",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    }
+  ]
+}
