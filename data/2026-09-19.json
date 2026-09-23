@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19 — CST",
+  "timezone": "Asia/Shanghai",
+  "bots": [
+    {
+      "id": "zhuhai",
+      "name": "珠海学院",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "xingangren",
+      "name": "新港人",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "shengcai",
+      "name": "生财有术",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "haiwai",
+      "name": "境外医疗",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "robinhood",
+      "name": "Robin Hood",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "shopify",
+      "name": "shopify",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "guji",
+      "name": "古籍",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "test",
+      "name": "Test",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    },
+    {
+      "id": "chat",
+      "name": "chat",
+      "status": "空闲",
+      "lastActive": "—",
+      "highlights": [
+        "该日无归档数据（首版起才有）"
+      ],
+      "links": [],
+      "blockers": []
+    }
+  ],
+  "placeholder": true
+}

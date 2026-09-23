@@ -1,0 +1,74 @@
+{
+  "bots": [
+    {
+      "id": "zhuhai",
+      "name": "珠海学院",
+      "routines": [
+        {"name": "MSAAI 同步", "schedule": "每小时 :13/:43，7:13–23:43", "paused": false},
+        {"name": "MSAAI 夜间同步", "schedule": "每天 0:55/2:55/4:55", "paused": false}
+      ]
+    },
+    {
+      "id": "xingangren",
+      "name": "新港人",
+      "routines": [
+        {"name": "每日内容流程", "schedule": "每天 8:50", "paused": false},
+        {"name": "知乎每日", "schedule": "每小时 9:01–23:01", "paused": false},
+        {"name": "小红书每日发布", "schedule": "每天", "paused": true}
+      ]
+    },
+    {
+      "id": "shengcai",
+      "name": "生财有术",
+      "routines": [
+        {"name": "生财多板块日报", "schedule": "每天 9:21", "paused": false}
+      ]
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "routines": [
+        {"name": "香港职位每日简报", "schedule": "每天 9:15", "paused": false}
+      ]
+    },
+    {
+      "id": "haiwai",
+      "name": "境外医疗",
+      "routines": [
+        {"name": "对标号每日复查", "schedule": "工作日 8:40", "paused": false},
+        {"name": "每周发布数据回流与选题扩充", "schedule": "周一 9:11", "paused": false},
+        {"name": "双周竞品与行业情报", "schedule": "每月 1、15 日 10:11", "paused": false},
+        {"name": "每月事实数据保鲜", "schedule": "每月 1 日 10:46", "paused": false}
+      ]
+    },
+    {
+      "id": "robinhood",
+      "name": "Robin Hood",
+      "routines": [
+        {"name": "RHC hot new tokens", "schedule": "—", "paused": true}
+      ]
+    },
+    {
+      "id": "shopify",
+      "name": "shopify",
+      "routines": [
+        {"name": "Ridgebrew Pinterest daily publish", "schedule": "每天 10:01", "paused": false}
+      ]
+    },
+    {
+      "id": "guji",
+      "name": "古籍",
+      "routines": []
+    },
+    {
+      "id": "test",
+      "name": "Test",
+      "routines": []
+    },
+    {
+      "id": "chat",
+      "name": "chat",
+      "routines": []
+    }
+  ]
+}

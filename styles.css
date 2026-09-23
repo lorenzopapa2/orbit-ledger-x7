@@ -1,0 +1,112 @@
+:root {
+  --bg: #0f1218;
+  --card: #1a2030;
+  --line: #2a3348;
+  --text: #e8ecf4;
+  --muted: #8b95a8;
+  --ok: #3dd68c;
+  --stuck: #ff6b6b;
+  --idle: #8b95a8;
+  --warn-bg: #3a2218;
+  --accent: #6ea8fe;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0,0,0,.35);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Noto Sans SC", sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 10% -10%, #1a2740 0%, var(--bg) 55%);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.45;
+  padding: 16px;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+.top {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  justify-content: space-between; margin-bottom: 16px;
+}
+.brand h1 { margin: 0; font-size: 1.35rem; letter-spacing: .02em; }
+.sub { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
+.date-nav {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 8px;
+}
+.date-nav button {
+  background: transparent; border: 0; color: var(--text);
+  font-size: 1.25rem; width: 36px; height: 36px; border-radius: 50%;
+  cursor: pointer;
+}
+.date-nav button:hover { background: #243049; }
+.date-nav select {
+  background: transparent; color: var(--text); border: 0;
+  font-size: .95rem; padding: 6px 4px; outline: none;
+}
+.summary {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+  margin-bottom: 16px;
+}
+.stat {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 12px; box-shadow: var(--shadow);
+}
+.stat .n { display: block; font-size: 1.4rem; font-weight: 700; }
+.stat .l { color: var(--muted); font-size: .8rem; }
+.stat.warn .n { color: #ff9b7a; }
+.stat.muted .n { font-size: .95rem; font-weight: 600; color: var(--muted); }
+.needs {
+  background: var(--warn-bg); border: 1px solid #6a3a2a;
+  border-radius: var(--radius); padding: 14px 16px; margin-bottom: 16px;
+}
+.needs h2 { margin: 0 0 8px; font-size: 1rem; color: #ffb199; }
+.needs ul { margin: 0; padding-left: 1.1rem; }
+.needs li { margin: 6px 0; }
+.needs .bot-tag {
+  display: inline-block; background: #4a2a20; color: #ffd0c0;
+  border-radius: 6px; padding: 1px 8px; font-size: .8rem; margin-right: 6px;
+}
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; box-shadow: var(--shadow);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.card-head {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+}
+.card-head h3 { margin: 0; font-size: 1.05rem; }
+.badge {
+  font-size: .75rem; font-weight: 700; padding: 3px 8px;
+  border-radius: 999px; white-space: nowrap;
+}
+.badge.ok { background: rgba(61,214,140,.15); color: var(--ok); }
+.badge.stuck { background: rgba(255,107,107,.18); color: var(--stuck); }
+.badge.idle { background: rgba(139,149,168,.15); color: var(--idle); }
+.meta { color: var(--muted); font-size: .8rem; }
+.section-title {
+  font-size: .75rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); margin: 0 0 4px;
+}
+.routines, .highlights, .links, .blockers { margin: 0; padding-left: 1.05rem; font-size: .9rem; }
+.routines li, .highlights li, .links li, .blockers li { margin: 3px 0; }
+.paused { color: var(--muted); text-decoration: line-through; }
+.links a { color: var(--accent); word-break: break-all; }
+.empty { color: var(--muted); font-size: .85rem; margin: 0; }
+.foot {
+  margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between;
+  color: var(--muted); font-size: .75rem;
+}
+@media (max-width: 720px) {
+  body { padding: 12px; }
+  .summary { grid-template-columns: repeat(2, 1fr); }
+  .brand h1 { font-size: 1.15rem; }
+}

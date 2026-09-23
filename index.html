@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <title>Ops Ledger</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Ops Ledger</h1>
+      <p class="sub">Bot 总控 · 摘要面板</p>
+    </div>
+    <div class="date-nav">
+      <button type="button" id="prevDay" aria-label="前一天">‹</button>
+      <label class="sr-only" for="dateSelect">日期</label>
+      <select id="dateSelect"></select>
+      <button type="button" id="nextDay" aria-label="后一天">›</button>
+    </div>
+  </header>
+
+  <section class="summary" id="summaryBar">
+    <div class="stat"><span class="n" id="statBots">—</span><span class="l">Bot</span></div>
+    <div class="stat"><span class="n" id="statActive">—</span><span class="l">今日活跃</span></div>
+    <div class="stat warn"><span class="n" id="statBlockers">—</span><span class="l">待我处理</span></div>
+    <div class="stat muted"><span class="n" id="statGen">—</span><span class="l">更新于</span></div>
+  </section>
+
+  <section class="needs" id="needsSection" hidden>
+    <h2>需要我处理</h2>
+    <ul id="needsList"></ul>
+  </section>
+
+  <main class="grid" id="botGrid"></main>
+
+  <footer class="foot">
+    <span>仅内部摘要 · noindex</span>
+    <span id="footNote"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
