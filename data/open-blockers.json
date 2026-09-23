@@ -1,10 +1,18 @@
 {
-  "updatedAt": "2026-09-23 22:15:00 CST",
+  "updatedAt": "2026-09-23 23:23:17 CST",
   "items": [
     {
       "bot": "珠海学院",
       "key": "珠海学院:今日截止：编程作业1（三个 hello world）需确认是否已交",
-      "text": "今日截止：编程作业1（三个 hello world）需确认是否已交",
+      "text": "编程作业1（三个 hello world）是否已交仍待确认（Moodle Upcoming 仍未见该作业）",
+      "since": "2026-09-23",
+      "days": 1,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "bot": "珠海学院",
+      "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
+      "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
       "since": "2026-09-23",
       "days": 1,
       "lastSeen": "2026-09-23"

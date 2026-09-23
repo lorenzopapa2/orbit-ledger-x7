@@ -1,18 +1,18 @@
 {
   "date": "2026-09-23",
-  "generatedAt": "2026-09-23 22:15:00 CST",
+  "generatedAt": "2026-09-23 23:23:17 CST",
   "timezone": "Asia/Shanghai",
   "bots": [
     {
       "id": "zhuhai",
       "name": "珠海学院",
       "status": "正常",
-      "lastActive": "2026-09-23 20:39:52 CST",
+      "lastActive": "2026-09-23 22:59:00 CST",
       "highlights": [
-        "MSAAI 早间/晚间简报已发：今日 RAI601 毕业设计课，提醒提交编程作业1（三个 hello world）",
-        "同步多封学校邮件（LE、Student Affairs 迎新礼包最后一天、Library、体育部）并写入面板",
-        "公开面板持续更新",
-        "近几天截止：9/23 编程作业1；9/29 作业1"
+        "MSAAI 同步持续跑通：早报 07:14、晚报 20:39 已发；夜间至 22:59 仍在抓",
+        "Outlook/Moodle/Gmail 正常；今日学校邮件已写入公开面板（体育部/Library/Student Affairs/LE 等）",
+        "Moodle Upcoming 仍未见「Assignment 1 hello world」条目",
+        "SIS 因登录失效已按规则暂停，等主人说「SIS 好了」再恢复"
       ],
       "links": [
         "https://lorenzopapa2.github.io/msaai-panel/"
@@ -20,15 +20,21 @@
       "blockers": [
         {
           "key": "珠海学院:今日截止：编程作业1（三个 hello world）需确认是否已交",
-          "text": "今日截止：编程作业1（三个 hello world）需确认是否已交",
+          "text": "编程作业1（三个 hello world）是否已交仍待确认（Moodle Upcoming 仍未见该作业）",
+          "since": "2026-09-23",
+          "days": 1
+        },
+        {
+          "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
+          "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
           "since": "2026-09-23",
           "days": 1
         }
       ],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/home/box/msaai/RULES.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "xingangren",
@@ -37,9 +43,9 @@
       "lastActive": "2026-09-23 18:37:10 CST",
       "highlights": [
         "早报：英基 Y1/Y7 申请窗 9/30 截止成稿；HKIS 高中开放日 10/8 候选",
-        "新写/翻新内容卡，published 约 142、queued 4",
-        "知乎今日完成：2 答 + 1 专栏（英基中央窗 / 插班 / 高才）",
-        "小红书例行仍停用；事实库部分英基小学 key_dates 仍写 2025"
+        "知乎今日完成：2 答 + 1 专栏（初中插班英文难度 / 高才优才好处 / 英基中央窗）",
+        "内容库 published 142、queued 4；今日入队 3 校稿 + 1 翻新",
+        "小红书例行仍停用；YouTube 书单上传仍 blocked"
       ],
       "links": [
         "https://www.zhihu.com/question/2041828583568660346/answer/2086160336604886466",
@@ -62,8 +68,8 @@
       ],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/workspace/xingangren-kb/AGENTS.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "shengcai",
@@ -73,7 +79,8 @@
       "highlights": [
         "生财精华帖日报已送达（约过去 36 小时 HKT）",
         "头条：B 站好物 + Codex/Agent 自动化剪辑降本增效案例",
-        "附多条生财帖文链接"
+        "附多条生财帖文链接",
+        "本机 reports/ 未落盘副本；未按新状态行格式汇报"
       ],
       "links": [
         "https://scys.com/articleDetail/xq_topic/14425421285451282",
@@ -86,8 +93,8 @@
       "blockers": [],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/workspace/shengcai/RULES.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "hermes",
@@ -98,7 +105,7 @@
         "香港职位每日简报已发：新进库 21（全 JobsDB），真 AI 合规/治理新岗仍为 0",
         "新信号：HashKey On Chain（RWA）、Newrecs GenAI BA（JD 点名 AI Governance）",
         "续投短名单：Adecco AI Security Sales、JustOneGalaxy Model Risk/AI Governance、Acts Stablecoin 等",
-        "JobsDB/w3c 正常；国元合规/Pinpoint 仍停更"
+        "JobsDB/w3c 正常；国元合规/Pinpoint 仍停更；尚无 RULES.md"
       ],
       "links": [
         "https://hk.jobsdb.com/job/94584790",
@@ -128,7 +135,8 @@
       "highlights": [
         "对标号每日复查：关注号视频增至 52（多 2 条），粉约 687",
         "更新竞品格局文档；站点 update 成功且线上验证 200",
-        "爆款库与正文未做深核"
+        "爆款库与正文未做深核",
+        "RULES.md 已落盘"
       ],
       "links": [],
       "blockers": [
@@ -141,8 +149,8 @@
       ],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/home/box/agent-data/agents/41ba2cff-0f69-485f-9ac1-63bf00d8fc1a/RULES.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "robinhood",
@@ -150,22 +158,24 @@
       "status": "空闲",
       "lastActive": "2026-09-22 17:53:10 CST",
       "highlights": [
-        "今日无会话活动"
+        "例行已暂停；今日无会话活动"
       ],
       "links": [],
       "blockers": [],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/home/box/agent-data/agents/e21a0330-dace-4627-b969-cf28138beab6/rhc/RULES.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "shopify",
       "name": "shopify",
       "status": "漏跑",
-      "lastActive": "2026-09-21 13:12:34 CST",
+      "lastActive": "2026-09-22 10:21:19 CST",
       "highlights": [
-        "今日无会话活动"
+        "今日无会话活动；Pinterest 日志最近一条仍是 9/22",
+        "Ridgebrew Pinterest daily publish（每天 10:01）今日未见发布 → 漏跑",
+        "5 篇 Journal 仍待主人在已授权电脑回复「好了」后发布"
       ],
       "links": [],
       "blockers": [
@@ -178,8 +188,8 @@
       ],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/workspace/ridgebrew/RULES.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "guji",
@@ -187,14 +197,14 @@
       "status": "空闲",
       "lastActive": "2026-09-16 21:29:50 CST",
       "highlights": [
-        "今日无会话活动"
+        "无例行；今日无会话活动"
       ],
       "links": [],
       "blockers": [],
       "formatOk": false,
       "statusLine": null,
-      "rulesPath": null,
-      "rulesUpdated": null
+      "rulesPath": "/home/box/sand-data/knowledge/daizhigev20/RULES.md",
+      "rulesUpdated": "2026-09-23"
     },
     {
       "id": "test",
@@ -202,7 +212,7 @@
       "status": "空闲",
       "lastActive": "2026-09-22 19:01:34 CST",
       "highlights": [
-        "今日无会话活动"
+        "无例行；今日无会话活动"
       ],
       "links": [],
       "blockers": [],
@@ -215,17 +225,17 @@
       "id": "chat",
       "name": "chat",
       "status": "正常",
-      "lastActive": "2026-09-23 22:02:00 CST",
+      "lastActive": "2026-09-23 23:23:17 CST",
       "highlights": [
-        "确认可读同账号其他 Bot 会话，并支持 GitHub Pages 面板",
-        "完成「Bot 总控面板」第一版：当日摘要、例行任务写死配置、近7天切换",
-        "已发布 GitHub Pages，并加每天 22:30 自动汇总例行任务"
+        "Bot 总控面板已上线并按 22:30 例行刷新",
+        "本轮补全各 Bot RULES 路径、更新珠海学院至 22:59 同步结果，确认 shopify Pinterest 漏跑",
+        "多数 Bot 仍未按「状态｜产出｜需主人处理」末行格式汇报"
       ],
       "links": [
         "https://lorenzopapa2.github.io/orbit-ledger-x7/"
       ],
       "blockers": [],
-      "formatOk": true,
+      "formatOk": false,
       "statusLine": null,
       "rulesPath": null,
       "rulesUpdated": null
