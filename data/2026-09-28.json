@@ -1,0 +1,242 @@
+{
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28 23:07:20 CST",
+  "timezone": "Asia/Shanghai",
+  "bots": [
+    {
+      "id": "zhuhai",
+      "name": "珠海学院",
+      "status": "正常",
+      "lastActive": "2026-09-28 22:56:00 CST",
+      "highlights": [
+        "MSAAI 同步全日跑通：早报、晚报（20:31 已标）；最近一次同步 22:56（Outlook/Moodle/Gmail 正常）",
+        "作业1 已交 ✓；近截止：lab1 10/3、毕设工作会议 #2 10/3 09:30–12:30 M02",
+        "Timeline 更远未交：线性回归 10/8、任务分工表 10/11、毕设修订提案 10/16、AI Assignment-1 10/16、编程 Assignment2 10/20",
+        "今日新通知 2（国庆升旗 Reminder、Seminar 邀请）；本轮 22:56 panel_changed=false、未再写 GitHub",
+        "SIS 仍暂停（sis_paused_until_owner，fails=672），等主人说「SIS 好了」"
+      ],
+      "links": [
+        "https://lorenzopapa2.github.io/msaai-panel/"
+      ],
+      "blockers": [
+        {
+          "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
+          "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
+          "since": "2026-09-23",
+          "days": 6
+        }
+      ],
+      "formatOk": true,
+      "statusLine": "状态：OK ｜ 产出：晚报+Timeline刷新 ｜ 需主人处理：无",
+      "rulesPath": "/home/box/msaai/RULES.md",
+      "rulesUpdated": "2026-09-24"
+    },
+    {
+      "id": "xingangren",
+      "name": "新港人",
+      "status": "部分失败",
+      "lastActive": "2026-09-28 09:02:00 CST",
+      "highlights": [
+        "每日内容流程已跑（周一全量）：事实库 ESF key_dates 保鲜；雷达 2 卡（Early Years 关联小学 / Pre-K 1月窗+申请费）；要闻 w40；新稿 Malvern + ESF K1 通路；翻新 IANG→受养人",
+        "内容库 published 152、queued 5；今夜 02:00 收稿预计再入队今日新稿",
+        "知乎仍禁言（推断约 10/02 17:04 解除），今日跳过发布；等「知乎恢复」",
+        "小红书例行仍停用；YouTube 书单上传仍 blocked（Studio WebSocket 403 / CDP origins）"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "新港人:知乎禁言约7天（推断10/02前后解除），2答+1专栏草稿未发；等主人回复「知乎恢复」",
+          "text": "知乎禁言约 7 天（9/25 AI 批量生成；推断约 10/02 17:04 解除），发布仍 blocked；等主人回复「知乎恢复」后再开",
+          "since": "2026-09-26",
+          "days": 3
+        },
+        {
+          "key": "新港人:YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
+          "text": "YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
+          "since": "2026-09-23",
+          "days": 6
+        },
+        {
+          "key": "新港人:小红书每日发布例行仍为停用",
+          "text": "小红书每日发布例行仍为停用",
+          "since": "2026-09-23",
+          "days": 6
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/workspace/xingangren-kb/AGENTS.md",
+      "rulesUpdated": "2026-09-23"
+    },
+    {
+      "id": "shengcai",
+      "name": "生财有术",
+      "status": "部分失败",
+      "lastActive": "2026-09-28 09:45:00 CST",
+      "highlights": [
+        "生财多板块日报已发并落盘 reports/2026-09-28.md（HKT 9/27 09:41 → 9/28 09:45）",
+        "精华 0 / 风向标 6 / 中标 0 / 主题 3；头条含雅思 AI 批改、定制教师课件、质性编码助手等",
+        "AI 情报接口仍 REMOTE_HTTP_ERROR；约定 21:00 前补发，截至汇总仍未见补发落盘"
+      ],
+      "links": [
+        "https://scys.com/articleDetail/xq_topic/82258251128542482",
+        "https://scys.com/articleDetail/xq_topic/45548541182515418",
+        "https://scys.com/articleDetail/xq_topic/82258251412158852",
+        "https://scys.com/articleDetail/xq_topic/45548541182482518",
+        "https://scys.com/articleDetail/xq_topic/55521528482281484",
+        "https://scys.com/articleDetail/xq_topic/45548541212458558",
+        "https://scys.com/articleDetail/xq_topic/45548541185858288",
+        "https://scys.com/articleDetail/xq_topic/45548541214811148",
+        "https://scys.com/articleDetail/xq_topic/14425428188842482"
+      ],
+      "blockers": [],
+      "formatOk": true,
+      "statusLine": "状态：部分失败 ｜ 产出：日报已发+落盘 reports/2026-09-28.md；精华0/风向标6/中标0/主题3；AI情报待21:00前补发 ｜ 需主人处理：无",
+      "rulesPath": "/workspace/shengcai/RULES.md",
+      "rulesUpdated": "2026-09-23"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "status": "漏跑",
+      "lastActive": "2026-09-15 09:20:39 CST",
+      "highlights": [
+        "香港职位每日简报（每天 9:15）今日未见报告 / latest / memory 落盘 → 漏跑（连续至少五天）",
+        "本机 jobs.db 与 reports 无今日更新；尚无 RULES.md"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "Hermes:今日香港职位每日简报漏跑，需确认例行是否正常触发",
+          "text": "香港职位每日简报连续漏跑（至少 9/24–9/28），需确认例行是否正常触发",
+          "since": "2026-09-24",
+          "days": 5
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": null,
+      "rulesUpdated": null
+    },
+    {
+      "id": "haiwai",
+      "name": "境外医疗",
+      "status": "部分失败",
+      "lastActive": "2026-09-28 09:18:00 CST",
+      "highlights": [
+        "周一：对标复查（约 08:51–08:55 截图）+ 每周发布回流/选题扩充（A'+B）已跑",
+        "@sinichealth.burger QUIET（粉/赞相对 9/25 基线变动 <5%）；无合格新片，未改爆款库/竞品格局；update.sh 成功线上 200",
+        "选题组合器已扩充（HOOKS/FAQS/MYTHS/TRIPS/MECHS/PROOFS）；价值出口 3 选题已交",
+        "部分失败：宫格两次空、新片 ID/李清作品列表未核验；自家仍零起步无可回流数据"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/home/box/agent-data/agents/41ba2cff-0f69-485f-9ac1-63bf00d8fc1a/RULES.md",
+      "rulesUpdated": "2026-09-23"
+    },
+    {
+      "id": "robinhood",
+      "name": "Robin Hood",
+      "status": "空闲",
+      "lastActive": "2026-09-22 17:53:10 CST",
+      "highlights": [
+        "例行已暂停；今日无会话活动"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/home/box/agent-data/agents/e21a0330-dace-4627-b969-cf28138beab6/rhc/RULES.md",
+      "rulesUpdated": "2026-09-23"
+    },
+    {
+      "id": "shopify",
+      "name": "shopify",
+      "status": "正常",
+      "lastActive": "2026-09-28 10:31:00 CST",
+      "highlights": [
+        "Ridgebrew Pinterest 日更完成：目标 10 / 确认发出 10（冷萃过夜、超轻背包、烧焦味修复等）",
+        "周一 Pinterest 周报已取：2026-09-21..27 浏览约 1.87 万 / 收藏 65 / 出站点击 1（账号总览）",
+        "5 篇 Journal 草稿仍待发布（Mac A1.local 离线；公开页仍 404）",
+        "另有 Muse SEO/两篇 Journal 素材在 /workspace/ridgebrew-muse-promo（chat 侧准备，未计入本 Bot 日更）"
+      ],
+      "links": [
+        "https://www.pinterest.com/pin/798544577731183618/",
+        "https://www.pinterest.com/pin/798544577731183638/",
+        "https://www.pinterest.com/pin/798544577731183656/",
+        "https://www.pinterest.com/pin/798544577731183676/",
+        "https://www.pinterest.com/pin/798544577731183685/",
+        "https://www.pinterest.com/pin/798544577731183701/",
+        "https://www.pinterest.com/pin/798544577731183707/",
+        "https://www.pinterest.com/pin/798544577731183725/",
+        "https://www.pinterest.com/pin/798544577731183749/",
+        "https://www.pinterest.com/pin/798544577731183767/"
+      ],
+      "blockers": [
+        {
+          "key": "shopify:5 篇 Shopify Journal 已写好但未发布：需在已授权 Shopify 的电脑打开 Grok Bot 桌面端并回复「好了」",
+          "text": "5 篇 Shopify Journal 已写好但未发布：Mac A1.local 离线，公开页仍 404；待桌面端在线后由例行自动发",
+          "since": "2026-09-23",
+          "days": 6
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/workspace/ridgebrew/RULES.md",
+      "rulesUpdated": "2026-09-27"
+    },
+    {
+      "id": "guji",
+      "name": "古籍",
+      "status": "空闲",
+      "lastActive": "2026-09-16 21:29:50 CST",
+      "highlights": [
+        "无例行；今日无会话活动"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/home/box/sand-data/knowledge/daizhigev20/RULES.md",
+      "rulesUpdated": "2026-09-23"
+    },
+    {
+      "id": "test",
+      "name": "Test",
+      "status": "空闲",
+      "lastActive": "2026-09-22 19:01:34 CST",
+      "highlights": [
+        "无例行；今日无会话活动"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": null,
+      "rulesUpdated": null
+    },
+    {
+      "id": "chat",
+      "name": "chat",
+      "status": "正常",
+      "lastActive": "2026-09-28 23:07:20 CST",
+      "highlights": [
+        "Bot 总控面板按例行刷新今日汇总",
+        "今日主线：Muse.ai 全权推广 Ridgebrew；完成站点审计/关键词包与 Journal/SEO 素材准备（/workspace/ridgebrew-muse-promo）",
+        "本轮用各 Bot 落盘产物/公开面板作等价汇总（本机会话库多仍停在 Sep 20）",
+        "shopify Pinterest 今日 10/10；珠海学院全日同步正常；Hermes 连续漏跑"
+      ],
+      "links": [
+        "https://lorenzopapa2.github.io/orbit-ledger-x7/"
+      ],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": null,
+      "rulesUpdated": null
+    }
+  ],
+  "schemaVersion": 2
+}
