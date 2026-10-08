@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08 23:50:00 CST",
+  "timezone": "Asia/Shanghai",
+  "bots": [
+    {
+      "id": "zhuhai",
+      "name": "珠海学院",
+      "status": "部分失败",
+      "lastActive": "2026-10-08 20:58:00 CST",
+      "highlights": [
+        "MSAAI 同步全日有跑：早间 Timeline ~07:22、晚报 20:58（Timeline 20:57 刷新）；Outlook/Moodle 正常",
+        "今日新通知：Moodle RAI604 新挂 lab3（截止 10/23；10/9 起开放提交），已并入晚报",
+        "A01 线性回归已提交（今日 23:59 截止）；未交 8 项（另 30 天外 1 项）：最近 Final Project 任务分工表 10/11 23:59、数学作业2 10/13 15:30",
+        "SIS 仍暂停；学生 Gmail 在 bot 浏览器仍挂另一账号，今日跳过 Gmail",
+        "本机会话库大多停在 10/06 14:16，今日状态行取自晚报落盘"
+      ],
+      "links": [
+        "https://lorenzopapa2.github.io/msaai-panel/"
+      ],
+      "blockers": [
+        {
+          "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
+          "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
+          "since": "2026-09-23",
+          "days": 16
+        },
+        {
+          "key": "珠海学院:学生 Gmail 在 bot 浏览器已登出，需主人重新登录",
+          "text": "学生 Gmail 在 bot 浏览器里仍未登录（挂另一账号），今日跳过 Gmail；需主人在 bot 浏览器重新登录学生邮箱",
+          "since": "2026-10-05",
+          "days": 4
+        }
+      ],
+      "formatOk": true,
+      "statusLine": "状态：部分失败 ｜ 产出：晚报+Timeline刷新（未交8项+30天外1项，新增 lab3 入未交清单）；Outlook/Moodle 正常，面板无新变化 ｜ 需主人处理：无（SIS、Gmail 见早报）",
+      "rulesPath": "/home/box/msaai/RULES.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "xingangren",
+      "name": "新港人",
+      "status": "部分失败",
+      "lastActive": "2026-10-08 09:05:00 CST",
+      "highlights": [
+        "每日内容流程已跑（周四，跳过周一保鲜/要闻）：雷达新卡 1（VSA Year 1 2028/29 参观窗 9 月–次年 2 月）",
+        "新稿 2（京斯敦单校文、10–12 月国际校申请截止清单）validate PASS；翻新 1（top-international-primary-schools-2026 按 EDB/官网重写）",
+        "收稿：昨日 2 稿入队（港湾、挪威），dbs-vs-lasalle-vs-spc 翻新已上线；事实库提醒 VSA 未入库、京斯敦学费口径待核",
+        "知乎熔断仍生效、今日不发；小红书例行仍停用；YouTube 书单上传仍 blocked"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "新港人:知乎禁言约7天（推断10/02前后解除），2答+1专栏草稿未发；等主人回复「知乎恢复」",
+          "text": "知乎熔断首行未改、今日仍跳过发布；等主人回复「知乎恢复」并核验可发后再开",
+          "since": "2026-09-26",
+          "days": 13
+        },
+        {
+          "key": "新港人:YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
+          "text": "YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked（需在 Mac 上修好调试端口或换上传方式后回「修好了」）",
+          "since": "2026-09-23",
+          "days": 16
+        },
+        {
+          "key": "新港人:小红书每日发布例行仍为停用",
+          "text": "小红书每日发布例行仍为停用",
+          "since": "2026-09-23",
+          "days": 16
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/workspace/xingangren-kb/AGENTS.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "shengcai",
+      "name": "生财有术",
+      "status": "失败",
+      "lastActive": "2026-09-30 09:28:00 CST",
+      "highlights": [
+        "今日无新日报落盘（无 reports/2026-10-08.md）；最近短报仍为 9/30",
+        "scys-mcp 仍 needsAuth；精华/风向标/中标/主题/AI情报均未拉取",
+        "修好后需回「已重连」再恢复例行"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "生财有术:scys-mcp 需重新 OAuth 授权，日报精华/风向标等均未拉取",
+          "text": "生财 MCP（scys-mcp）needsAuth，日报精华/风向标/中标/主题/AI情报均未拉取；需在连接设置完成 OAuth 后回「已重连」",
+          "since": "2026-09-29",
+          "days": 10
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/workspace/shengcai/RULES.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "status": "漏跑",
+      "lastActive": "2026-09-15 09:20:39 CST",
+      "highlights": [
+        "香港职位每日简报（每天 9:15）今日仍未见报告 / 落盘 → 漏跑（连续第 15 天）",
+        "本机 jobs.db 无今日更新；尚无 RULES.md"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "Hermes:今日香港职位每日简报漏跑，需确认例行是否正常触发",
+          "text": "香港职位每日简报连续漏跑（9/24–10/08），需确认例行是否正常触发",
+          "since": "2026-09-24",
+          "days": 15
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": null,
+      "rulesUpdated": null
+    },
+    {
+      "id": "haiwai",
+      "name": "境外医疗",
+      "status": "漏跑",
+      "lastActive": "2026-10-07 08:48:00 CST",
+      "highlights": [
+        "工作日对标复查（8:40）今日未见抓取落盘（无 sinic_1008.html；最近为 10/07 08:48 的 sinic_1007.html）→ 漏跑",
+        "周四非周回流/双周/月更排期日"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "境外医疗:对标号每日复查今日漏跑，未见 sinic_1008 等抓取落盘",
+          "text": "工作日对标复查（8:40）今日未见落盘（无 sinic_1008.html；最近为 10/07 08:48），需确认例行是否触发",
+          "since": "2026-10-08",
+          "days": 1
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/home/box/agent-data/agents/41ba2cff-0f69-485f-9ac1-63bf00d8fc1a/RULES.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "robinhood",
+      "name": "Robin Hood",
+      "status": "空闲",
+      "lastActive": "2026-09-22 17:53:10 CST",
+      "highlights": [
+        "例行已暂停；今日无会话活动"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/home/box/agent-data/agents/e21a0330-dace-4627-b969-cf28138beab6/rhc/RULES.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "shopify",
+      "name": "shopify",
+      "status": "正常",
+      "lastActive": "2026-10-08 10:05:00 CST",
+      "highlights": [
+        "Pinterest 日更：pins_1008 共 10 张 Pin 素材 + 看板截图（约 10:04–10:05）表明例行已跑",
+        "X（@ridgebrewcoff）今日 3 条推文 + 多条回复已发（约 09:29–09:35 HKT）；日目标 3",
+        "Facebook 今日素材已备（ridgebrew-fb-ops/2026-10-08）；有发布相关截图",
+        "GEO 复测（约 09:27–09:35）：类目词 7/14 有链接（较 10/07 的 5/14 上升），品牌词 6/6；Copilot/ChatGPT Search 仍 blocked",
+        "X 10/06 重复推文待主人决定是否删除"
+      ],
+      "links": [],
+      "blockers": [
+        {
+          "key": "shopify:X 10/06 重复推文待主人删除",
+          "text": "X 上 10/06 有 1 条重复推文仍未删除，等主人决定是否删掉",
+          "since": "2026-10-06",
+          "days": 3
+        }
+      ],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/workspace/ridgebrew/RULES.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "guji",
+      "name": "古籍",
+      "status": "空闲",
+      "lastActive": "2026-09-16 21:29:50 CST",
+      "highlights": [
+        "无例行；今日无会话活动"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": "/home/box/sand-data/knowledge/daizhigev20/RULES.md",
+      "rulesUpdated": "2026-10-03"
+    },
+    {
+      "id": "test",
+      "name": "Test",
+      "status": "空闲",
+      "lastActive": "2026-10-05 00:10:00 CST",
+      "highlights": [
+        "无例行；今日无新产出（最近为 10/05 00:10 的 X 对标调研）"
+      ],
+      "links": [],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": null,
+      "rulesUpdated": null
+    },
+    {
+      "id": "chat",
+      "name": "chat",
+      "status": "正常",
+      "lastActive": "2026-10-08 23:50:00 CST",
+      "highlights": [
+        "Bot 总控面板按例行刷新今日汇总",
+        "本轮仍用各 Bot 落盘产物作等价汇总（多数会话库停在 10/06 14:16；shopify store 今日有更新）",
+        "shopify Pinterest/X 今日有产出；境外医疗对标漏跑；珠海学院 A01 已交、SIS/Gmail 仍待主人；生财 MCP 仍需授权；Hermes 连续第 15 天漏跑"
+      ],
+      "links": [
+        "https://lorenzopapa2.github.io/orbit-ledger-x7/"
+      ],
+      "blockers": [],
+      "formatOk": false,
+      "statusLine": null,
+      "rulesPath": null,
+      "rulesUpdated": null
+    }
+  ],
+  "schemaVersion": 2
+}
