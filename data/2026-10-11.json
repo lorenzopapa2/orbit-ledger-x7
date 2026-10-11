@@ -33,7 +33,7 @@
       "formatOk": true,
       "statusLine": "状态：部分失败 ｜ 产出：晚报（沿用 07:20 快照，Timeline 未刷新） ｜ 需主人处理：今晚 23:59 前交任务分工表；SIS 需重新登录、Gmail 需切到学生账号",
       "rulesPath": "/home/box/msaai/RULES.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "xingangren",
@@ -69,7 +69,7 @@
       "formatOk": false,
       "statusLine": null,
       "rulesPath": "/workspace/xingangren-kb/AGENTS.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "shengcai",
@@ -92,7 +92,7 @@
       "formatOk": false,
       "statusLine": null,
       "rulesPath": "/workspace/shengcai/RULES.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "hermes",
@@ -138,7 +138,7 @@
       "formatOk": false,
       "statusLine": null,
       "rulesPath": "/home/box/agent-data/agents/41ba2cff-0f69-485f-9ac1-63bf00d8fc1a/RULES.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "robinhood",
@@ -153,7 +153,7 @@
       "formatOk": false,
       "statusLine": null,
       "rulesPath": "/home/box/agent-data/agents/e21a0330-dace-4627-b969-cf28138beab6/rhc/RULES.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "shopify",
@@ -182,7 +182,7 @@
       "formatOk": false,
       "statusLine": null,
       "rulesPath": "/workspace/ridgebrew/RULES.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "guji",
@@ -197,7 +197,7 @@
       "formatOk": false,
       "statusLine": null,
       "rulesPath": "/home/box/sand-data/knowledge/daizhigev20/RULES.md",
-      "rulesUpdated": "2026-10-11"
+      "rulesUpdated": "2026-10-03"
     },
     {
       "id": "test",
