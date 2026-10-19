@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-11",
-  "generatedAt": "2026-10-11 22:55:00 CST",
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19 22:56:00 CST",
   "timezone": "Asia/Shanghai",
   "bots": [
     {
       "id": "zhuhai",
       "name": "珠海学院",
       "status": "部分失败",
-      "lastActive": "2026-10-11 20:50:00 CST",
+      "lastActive": "2026-10-19 22:19:00 CST",
       "highlights": [
-        "晚报已出：今日无新通知，Moodle 截止日期未变（沿用 07:20 快照）",
-        "未交 8 项；RAI604 Final Project 任务分工表今晚 23:59 截止",
+        "早报 07:28、晚报 20:54 已出；白天同步持续至 22:19",
+        "未交 5：任务分工表仍逾期；最近 進度表 #01 约 10/25（🟠）；Assignment 2 与 lab3 已交",
         "SIS 仍暂停；学生 Gmail 仍登错账号"
       ],
       "links": [
@@ -21,17 +21,17 @@
           "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
           "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
           "since": "2026-09-23",
-          "days": 19
+          "days": 27
         },
         {
           "key": "珠海学院:学生 Gmail 在 bot 浏览器已登出，需主人重新登录",
-          "text": "学生 Gmail 在 bot 浏览器里仍未登录（挂另一账号），今日跳过 Gmail；需主人在 bot 浏览器重新登录学生邮箱",
+          "text": "学生 Gmail 在 bot 浏览器里仍登着另一账号，今日跳过 Gmail；需主人在 bot 浏览器切到学生邮箱",
           "since": "2026-10-05",
-          "days": 7
+          "days": 15
         }
       ],
       "formatOk": true,
-      "statusLine": "状态：部分失败 ｜ 产出：晚报（沿用 07:20 快照，Timeline 未刷新） ｜ 需主人处理：今晚 23:59 前交任务分工表；SIS 需重新登录、Gmail 需切到学生账号",
+      "statusLine": "状态：部分失败 ｜ 产出：晚报；Outlook ok 无新邮件；Moodle/Timeline ok 刷新（未交 5）；面板未变 ｜ 需主人处理：任务分工表仍逾期未交；畢業設計進度表 #01 2026/10/25 截止（约 123h，🟠）仍未交；SIS 需重新登录、Gmail 需切到学生账号",
       "rulesPath": "/home/box/msaai/RULES.md",
       "rulesUpdated": "2026-10-03"
     },
@@ -39,10 +39,10 @@
       "id": "xingangren",
       "name": "新港人",
       "status": "部分失败",
-      "lastActive": "2026-10-11 09:06:00 CST",
+      "lastActive": "2026-10-19 09:11:00 CST",
       "highlights": [
-        "每日内容流程已跑：雷达 1（SRIS Y7–13 报名）+ 新稿 2 + 翻新 1；收稿 2 篇入队",
-        "事实库提醒：SRIS / 培侨幼稚园课程标注疑有误，待主人核实",
+        "每日内容流程已跑：周一事实库保鲜 + 雷达 2（ASHK 万圣节开放日；启新 DC 开放日）+ 要闻周报 w43 + 新稿 2 + 翻新 1（国际学校学费对比），validate/commits 齐全（HEAD 0b0fda5）",
+        "昨日 2 篇收稿入队；翻新 pr-application 已覆盖；本地写手跳过；无拒稿",
         "知乎仍熔断跳过；小红书停用；YouTube 书单仍 blocked"
       ],
       "links": [],
@@ -51,19 +51,19 @@
           "key": "新港人:知乎禁言约7天（推断10/02前后解除），2答+1专栏草稿未发；等主人回复「知乎恢复」",
           "text": "知乎熔断首行未改、今日仍跳过发布；等主人回复「知乎恢复」并核验可发后再开",
           "since": "2026-09-26",
-          "days": 16
+          "days": 24
         },
         {
           "key": "新港人:YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
           "text": "YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked（需在 Mac 上修好调试端口或换上传方式后回「修好了」）",
           "since": "2026-09-23",
-          "days": 19
+          "days": 27
         },
         {
           "key": "新港人:小红书每日发布例行仍为停用",
           "text": "小红书每日发布例行仍为停用",
           "since": "2026-09-23",
-          "days": 19
+          "days": 27
         }
       ],
       "formatOk": false,
@@ -77,7 +77,7 @@
       "status": "失败",
       "lastActive": "2026-09-30 09:28:00 CST",
       "highlights": [
-        "今日无新日报落盘（无 reports/2026-10-11.md）；最近仍为 9/30",
+        "今日无新日报落盘（无 reports/2026-10-19.md）；最近仍为 9/30",
         "scys-mcp 仍 needsAuth；各板块均未拉取"
       ],
       "links": [],
@@ -86,7 +86,7 @@
           "key": "生财有术:scys-mcp 需重新 OAuth 授权，日报精华/风向标等均未拉取",
           "text": "生财 MCP（scys-mcp）needsAuth，日报精华/风向标/中标/主题/AI情报均未拉取；需在连接设置完成 OAuth 后回「已重连」",
           "since": "2026-09-29",
-          "days": 13
+          "days": 21
         }
       ],
       "formatOk": false,
@@ -100,16 +100,16 @@
       "status": "漏跑",
       "lastActive": "2026-09-15 09:20:39 CST",
       "highlights": [
-        "香港职位每日简报（每天 9:15）今日仍无报告/落盘 → 漏跑（连续第 18 天）",
+        "香港职位每日简报（每天 9:15）今日仍无报告/落盘 → 漏跑（连续第 26 天）",
         "尚无 RULES.md"
       ],
       "links": [],
       "blockers": [
         {
           "key": "Hermes:今日香港职位每日简报漏跑，需确认例行是否正常触发",
-          "text": "香港职位每日简报连续漏跑（9/24–10/11），需确认例行是否正常触发",
+          "text": "香港职位每日简报连续漏跑（9/24–10/19），需确认例行是否正常触发",
           "since": "2026-09-24",
-          "days": 18
+          "days": 26
         }
       ],
       "formatOk": false,
@@ -120,18 +120,19 @@
     {
       "id": "haiwai",
       "name": "境外医疗",
-      "status": "正常",
-      "lastActive": "2026-10-07 08:48:00 CST",
+      "status": "漏跑",
+      "lastActive": "2026-10-16 08:54:00 CST",
       "highlights": [
-        "周日不对标：今日无「对标号每日复查」排期，标正常",
-        "工作日漏跑待办仍在：最近落盘仍为 10/07 sinic_1007"
+        "今日周一：工作日对标（8:40）与「每周发布数据回流与选题扩充」（9:11）均应按时跑",
+        "无今日 tt_profile / 周更回流落盘；automation runs 与 audit 均无本周一记录 → 漏跑",
+        "TikTok CAPTCHA/WAF blocker 续挂（未证已解除）"
       ],
       "links": [],
       "blockers": [
         {
-          "key": "境外医疗:对标号每日复查今日漏跑，未见 sinic_1008 等抓取落盘",
-          "text": "工作日对标复查（8:40）10/08–10/09 未见落盘（最近为 10/07 08:48）；周末不对标，周一需确认例行是否触发",
-          "since": "2026-10-08",
+          "key": "境外医疗:TikTok 对标抓取遇 CAPTCHA/WAF，今日未完整落盘",
+          "text": "周一工作日对标与周更均无落盘（无 tt_profile / 回流产物）；周五起 CAPTCHA/WAF 未证解除，继续挂起",
+          "since": "2026-10-16",
           "days": 4
         }
       ],
@@ -159,10 +160,11 @@
       "id": "shopify",
       "name": "shopify",
       "status": "部分失败",
-      "lastActive": "2026-10-11 09:23:00 CST",
+      "lastActive": "2026-10-19 10:06:00 CST",
       "highlights": [
-        "X（@ridgebrewcoff）今日 3 条推文已备稿发出（ridgebrew-x-ops/2026-10-11）",
-        "Pinterest 日更：仍无 pinterest_pins_2026-10-11 → 今日未发布（第 3 天）"
+        "X：今日 5/5 主帖（带图）+ 5 条回复均已发，无重复（09:28–10:06）",
+        "FB 3 帖素材已备，未见发布结果文件；GEO 复测：类别 6/14（+Q08，较昨 +1）",
+        "Pinterest：今日无新 probe/落盘（最近仍为 10/18 403，第 11 天）"
       ],
       "links": [],
       "blockers": [
@@ -170,13 +172,13 @@
           "key": "shopify:X 10/06 重复推文待主人删除",
           "text": "X 上 10/06 有 1 条重复推文仍未删除，等主人决定是否删掉",
           "since": "2026-10-06",
-          "days": 6
+          "days": 14
         },
         {
           "key": "shopify:Pinterest 日更自 10/09 起未成功发布",
-          "text": "Pinterest 日更自 10/09 起未成功（今日仍无 pinterest_pins_2026-10-11 落盘）；需确认登录与网络后回「Pinterest 好了」",
+          "text": "Pinterest 日更自 10/09 起未成功（10/19 无新 probe/pins 落盘，最近仍为 10/18 403 Access Denied，队列 pending）；需确认登录与网络后回「Pinterest 好了」",
           "since": "2026-10-09",
-          "days": 3
+          "days": 11
         }
       ],
       "formatOk": false,
@@ -218,10 +220,10 @@
       "id": "chat",
       "name": "chat",
       "status": "正常",
-      "lastActive": "2026-10-11 22:55:00 CST",
+      "lastActive": "2026-10-19 22:56:00 CST",
       "highlights": [
         "Bot 总控面板按例行刷新今日汇总",
-        "会话库仍多停在 10/06，本轮以各 Bot 落盘产物汇总（珠海学院/新港人/shopify 今日有新文件）"
+        "会话库仍无转录；本轮以各 Bot 落盘产物汇总；境外医疗周一 对标+周更漏跑；GEO 6/14"
       ],
       "links": [
         "https://lorenzopapa2.github.io/orbit-ledger-x7/"
