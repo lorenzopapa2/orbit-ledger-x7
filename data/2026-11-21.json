@@ -1,6 +1,6 @@
 {
- "date": "2026-11-14",
- "generatedAt": "2026-11-14 22:35:00 CST",
+ "date": "2026-11-21",
+ "generatedAt": "2026-11-21 22:39:35 CST",
  "timezone": "Asia/Shanghai",
  "schemaVersion": 2,
  "bots": [
@@ -8,11 +8,11 @@
    "id": "zhuhai",
    "name": "珠海学院",
    "status": "部分失败",
-   "lastActive": "2026-11-14 22:16:00 CST",
+   "lastActive": "2026-11-21 21:22:00 CST",
    "highlights": [
-    "早报（07:29）+ 晚报（20:56）已出；白天同步持续至 22:16；今日学校 Outlook 无新通知（最新仍是 11/12 学生咨询大会邀请，早报已报）",
-    "Timeline 未交 6：任务分工表仍逾期（约 33.9 天）；中期报告评分表下午班仍逾期（约 7.9 天）；畢業設計進度表 #02 已于昨晚 23:38 提交；今日 09:30–12:30 毕设工作会议 #4 已结束；未来 7 天无新截止",
-    "SIS 仍暂停、学生 Gmail 仍登错账号（今日同步均跳过）"
+    "早报 + 晚报（21:22 已送达）已出；今日早晚学校 Outlook / Moodle 均未能刷新",
+    "未交仍 6（沿用 11/16 07:16 Timeline）：任务分工表仍逾期（约 40.9 天）；中期报告评分表下午班仍逾期（约 14.9 天）；畢業設計進度表 #02 已于 11/13 23:38 提交；教学问卷调查周（11/16–11/21）今天结束；今天周六与明天周日无课；下周一 11/23 春季选修选课开始（至 12/4）；未来 7 天无新截止",
+    "学校 Outlook 与 Moodle 的 Microsoft 登录仍失效；SIS 仍暂停；学生 Gmail 今早确认登录的不是学生账号"
    ],
    "links": [
     "https://lorenzopapa2.github.io/msaai-panel/"
@@ -22,17 +22,23 @@
      "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
      "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
      "since": "2026-09-23",
-     "days": 53
+     "days": 60
     },
     {
      "key": "珠海学院:学生 Gmail 在 bot 浏览器已登出，需主人重新登录",
-     "text": "学生 Gmail 在 bot 浏览器仍登错账号（今日同步均跳过），需主人切回学生邮箱",
+     "text": "学生 Gmail 今早确认登录的不是学生账号，早晚同步均跳过，需主人登录学生账号",
      "since": "2026-10-05",
-     "days": 41
+     "days": 48
+    },
+    {
+     "key": "珠海学院:学校 Outlook / Moodle 的 Microsoft 登录已失效，需重新登录",
+     "text": "今日早晚学校 Outlook 与 Moodle 的 Microsoft 登录仍失效，需在珠海学院对话里重新登录学校账号后才能继续同步",
+     "since": "2026-11-16",
+     "days": 6
     }
    ],
    "formatOk": true,
-   "statusLine": "状态：部分失败 ｜ 产出：晚报；Outlook ok 官方顶窗 11 行无变化；今日新通知 0 条；Moodle Upcoming/Timeline ok（未交 6，今晚 20:55 已刷新）；面板本轮未变 ｜ 需主人处理：Final Project - 任务分工表仍逾期未交；中期报告评分表下午班仍逾期未交；SIS 需重新登录、Gmail 需切到学生账号",
+   "statusLine": "状态：部分失败 ｜ 产出：晚报；Outlook login_needed、Moodle Upcoming/Timeline 今晚未刷新（沿用 12:27 / 07:16 快照）；本轮未改面板 ｜ 需主人处理：在本对话重新登录学校 Microsoft（Outlook / Moodle SSO）；任务分工表与中期报告评分表下午班仍逾期未交",
    "rulesPath": "/home/box/msaai/RULES.md",
    "rulesUpdated": "2026-10-03"
   },
@@ -40,10 +46,10 @@
    "id": "xingangren",
    "name": "新港人",
    "status": "部分失败",
-   "lastActive": "2026-11-14 09:04:00 CST",
+   "lastActive": "2026-11-21 09:01:00 CST",
    "highlights": [
-    "每日内容流程已跑（周六）：知识库提交 HEAD 5955ea5（雷达 1 cais-g2-12-deadline-dec11 + 新稿 cais-grade-2-12-deadline-dec-11-2026、yew-wah-school-hk-2028-29-when-to-apply + 翻新 hk-school-net-13-18-districts）",
-    "知乎熔断跳过；小红书停用；YouTube 书单仍 blocked（CDP WS 403）"
+    "每日内容流程已跑（周六）：知识库提交 HEAD 4b4a3a1（雷达 0 新卡，HKA 线上说明会与 THS Open Morning 两张旧卡当天成稿 + 2 新 hka-online-info-session-nov24-2026、ths-open-morning-nov25-2026 + 1 翻新 top-8-girls-secondary-schools-hk）",
+    "开工 queued 13；无新 GSC 卡；7 天 PV 前三 s1-allocation-algorithm 27、cantonese-six-month-plan 22、international-school-open-day-calendar-autumn-2026 20；知乎回链 0；知乎熔断跳过；小红书停用；YouTube 书单仍 blocked（CDP WS 403）"
    ],
    "links": [],
    "blockers": [
@@ -51,19 +57,19 @@
      "key": "新港人:知乎禁言约7天（推断10/02前后解除），2答+1专栏草稿未发；等主人回复「知乎恢复」",
      "text": "知乎熔断仍开、今日跳过发布；等主人回复「知乎恢复」并核验可发后再开",
      "since": "2026-09-26",
-     "days": 50
+     "days": 57
     },
     {
      "key": "新港人:YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
      "text": "YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked（需在 Mac 上修好调试端口或换上传方式后回「修好了」）",
      "since": "2026-09-23",
-     "days": 53
+     "days": 60
     },
     {
      "key": "新港人:小红书每日发布例行仍为停用",
      "text": "小红书每日发布例行仍为停用",
      "since": "2026-09-23",
-     "days": 53
+     "days": 60
     }
    ],
    "formatOk": false,
@@ -75,30 +81,44 @@
    "id": "shengcai",
    "name": "生财有术",
    "status": "正常",
-   "lastActive": "2026-11-14 09:30:00 CST",
+   "lastActive": "2026-11-21 09:34:00 CST",
    "highlights": [
-    "日报已落盘 reports/2026-11-14.md（窗 11/13 09:31→11/14 09:30）",
-    "精华过门槛 0，风向标 8，中标 0，主题 4；AI 情报 4 条；技能工作台上传成功",
+    "日报已落盘 reports/2026-11-21.md（窗 11/20 09:38→11/21 09:34）",
+    "精华过门槛 0，风向标 9，中标 0，主题 6；AI 情报 5 条；技能工作台上传成功（update.sh 已执行），并补传了 11/19、11/20",
     "需主人处理：无"
    ],
    "links": [],
    "blockers": [],
-   "formatOk": true,
-   "statusLine": "状态：OK ｜ 产出：日报已落盘 reports/2026-11-14.md；精华0/风向标8/中标0/主题4/AI情报4；技能工作台上传成功（update.sh ✅，HTTP 200） ｜ 需主人处理：无",
+   "formatOk": false,
+   "statusLine": null,
    "rulesPath": "/workspace/shengcai/RULES.md",
    "rulesUpdated": "2026-11-09"
   },
   {
    "id": "hermes",
    "name": "Hermes",
-   "status": "正常",
-   "lastActive": "2026-11-14 09:15:00 CST",
+   "status": "部分失败",
+   "lastActive": "2026-11-21 09:15:00 CST",
    "highlights": [
-    "香港职位每日简报例行仍启用（每天 9:15）；用量显示今日有该例行活动",
-    "简报在远端交付，本机读不到交付标记；未新开漏跑待办"
+    "香港职位每日简报已出（部分失败）：新进库 0 / 全库 5365 / 近7天 5，月薪中位约 50,400（n=2351）",
+    "劳工处再次令牌失效 79 次（相关 41→1、新 0，不能据此判断无新岗）；JobsDB 搜索 API 仍 403；HTML 新入待投 1（Captiare AI & Data Governance Analyst/Manager 96014860），待投现 19；主推招行 95551615、Captiare 96014860、JustOneGalaxy 95392679",
+    "需主人处理：确认 jobs.gov.hk 空缺咭能否打开，或授权排查劳工处 scraper session/令牌"
    ],
    "links": [],
-   "blockers": [],
+   "blockers": [
+    {
+     "key": "Hermes:JobsDB Cloudflare 已升级为首页和详情页也被拦截",
+     "text": "JobsDB Cloudflare 仍拦截该机搜索 API 以及详情页（今日简报已核验：搜索 API 仍 403）；完整增量抓取仍待主人处理拦截",
+     "since": "2026-11-15",
+     "days": 7
+    },
+    {
+     "key": "Hermes:劳工处空缺咭令牌失效，需确认网站并授权排查 scraper session",
+     "text": "劳工处空缺咭今日令牌失效 79 次（相关在线 41→1、新 0，不能据此判断无新岗）；请打开 jobs.gov.hk 确认空缺咭能否点开，若网站正常，授权排查 scraper 的劳工处 session/令牌",
+     "since": "2026-11-21",
+     "days": 1
+    }
+   ],
    "formatOk": false,
    "statusLine": null,
    "rulesPath": null,
@@ -108,10 +128,10 @@
    "id": "haiwai",
    "name": "境外医疗",
    "status": "空闲",
-   "lastActive": "2026-11-13 08:40:00 CST",
+   "lastActive": "2026-11-20 08:46:00 CST",
    "highlights": [
     "今日周六：工作日对标例行不跑；非周一/1日/15日，周更与双周不对标",
-    "每月事实数据保鲜（11/1）仍未见落盘确认，续挂第 14 天"
+    "每月事实数据保鲜（11/1）仍未见落盘确认，续挂第 21 天"
    ],
    "links": [],
    "blockers": [
@@ -119,7 +139,7 @@
      "key": "境外医疗:每月事实数据保鲜今日未见落盘",
      "text": "每月 1 日的事实数据保鲜例行 11/1 未见产出，至今日仍未确认是否已跑或并入双周复查",
      "since": "2026-11-01",
-     "days": 14
+     "days": 21
     }
    ],
    "formatOk": false,
@@ -146,11 +166,11 @@
    "id": "shopify",
    "name": "shopify",
    "status": "部分失败",
-   "lastActive": "2026-11-14 10:35:00 CST",
+   "lastActive": "2026-11-21 10:53:00 CST",
    "highlights": [
-    "Pinterest：10:16 发布 6/6（今日计划 6 条），另有 10 条既有草稿未动",
-    "X：0/5（09:33 发帖前遇 Cloudflare 安全验证硬停，连续中断第 2 天）；FB：3/3 已发（约 09:43–09:46）",
-    "多语言 SEO 今日已跑（DE/JA 品类词抽查 0/6 进 Top5；IndexNow api 200 + bing 200）；GEO 14 词测题集今日未见落盘；历史 6 条重复 X 推文及 11/09 误发 4 条仍待删"
+    "Pinterest：10:10 目标 10 / 实发 0（在库商品队列仍空，上次批次 11/14 发完）",
+    "X：例行仍暂停，今日未重试（Cloudflare 连续第 9 天）；FB：例行仍暂停，今日未重试（登录墙自 11/17 起第 5 天，daily_target 已降至 1）",
+    "多语言 SEO 今日已跑（周六 de/ja/it；抽检 9 页均已本地化，新英文残留 0，待翻 28；Google 前 5 仍 DE 0/3 + JA 0/3；IndexNow 9 URL 200/200）；历史 6 条重复 X 推文及 11/09 误发 4 条仍待删"
    ],
    "links": [],
    "blockers": [
@@ -158,49 +178,61 @@
      "key": "shopify:X 10/06 重复推文待主人删除",
      "text": "X 上 10/06 有 1 条重复推文仍未删除，等主人决定是否删掉",
      "since": "2026-10-06",
-     "days": 40
+     "days": 47
     },
     {
      "key": "shopify:X 10/22 重复推文待主人删除",
      "text": "X 上 10/22 post2（enamel 杯）误发重复 1 条，等主人确认是否删除",
      "since": "2026-10-22",
-     "days": 24
+     "days": 31
     },
     {
      "key": "shopify:X 10/24 重复推文待主人删除",
      "text": "X 上 10/24 post1 因点击延迟被发了两次，重复 1 条等主人确认是否删除",
      "since": "2026-10-24",
-     "days": 22
+     "days": 29
     },
     {
      "key": "shopify:X 10/30 重复推文待主人删除",
      "text": "X 上 10/30 post1 首次发布未在主页显示、重试后重复 1 条，等主人确认是否删除",
      "since": "2026-10-30",
-     "days": 16
+     "days": 23
     },
     {
      "key": "shopify:X 11/03 重复推文待主人删除",
      "text": "X 上 11/03 post1（皮革营火手套）首次发布未在主页显示、重试后重复 1 条，等主人确认是否删除",
      "since": "2026-11-03",
-     "days": 12
+     "days": 19
     },
     {
      "key": "shopify:X 11/05 重复推文待主人删除",
      "text": "X 上 11/05 post4（法压壶教程）因 FB 例行抢占标签页被重复发出 1 条，等主人确认是否删除",
      "since": "2026-11-05",
-     "days": 10
+     "days": 17
     },
     {
      "key": "shopify:X 11/09 重复/残缺推文待主人删除",
      "text": "X 上 11/09 因草稿粘滞和延迟可见，误留 4 条（2 条重复 + 2 条残缺），等主人确认是否删除",
      "since": "2026-11-09",
-     "days": 6
+     "days": 13
     },
     {
      "key": "shopify:X Cloudflare 安全验证阻断后续发帖",
-     "text": "X 今日发帖前就出现 Cloudflare 安全验证并硬停，0/5 未发；需主人在 box 浏览器以 @ridgebrewcoff 完成验证后再说可以重试",
+     "text": "X 例行仍暂停，今日未重试；连续第 9 天。需主人在 box 浏览器以 @ridgebrewcoff 完成 Cloudflare 验证并重新启用例行后再说可以重试",
      "since": "2026-11-13",
-     "days": 2
+     "days": 9
+    },
+    {
+     "key": "shopify:Pinterest 在售商品队列已空，需补生成图钉",
+     "text": "Pinterest 在库商品队列仍空（11/14 发完后今日目标 10 / 实发 0），需主人确认按在售商品生成至少 30 条 product:<handle>:pin<n> 图钉；不要跑 Mac 上的 pinterest_queue_publish.py",
+     "since": "2026-11-16",
+     "days": 6
+    },
+    {
+     "key": "shopify:Facebook 登录墙阻断发帖",
+     "text": "Facebook 例行仍暂停，今日未重试；登录墙自 11/17 起连续第 5 天，daily_target 已降至 1。需主人在 box 浏览器登录 Ridgebrew 主页后恢复例行并补发积压草稿",
+     "since": "2026-11-17",
+     "days": 5
     }
    ],
    "formatOk": false,
@@ -242,9 +274,9 @@
    "id": "chat",
    "name": "chat",
    "status": "正常",
-   "lastActive": "2026-11-14 22:35:00 CST",
+   "lastActive": "2026-11-21 22:39:35 CST",
    "highlights": [
-    "已刷新总控面板；shopify X Cloudflare 安全验证待办续期（今日 0/5）；畢業設計進度表 #02 已交，不另开待办；其余跨天待办续期，无新增无解除"
+    "已刷新总控面板；解除生财技能工作台上传失败（今日上传成功并补传 11/19、11/20）；新增 Hermes 劳工处空缺咭令牌再次失效；shopify Facebook 登录墙续期（例行仍暂停，第 5 天）、Pinterest 队列仍空、X 例行仍暂停（第 9 天）；珠海学院学校 Microsoft 登录仍失效；其余跨天待办续期"
    ],
    "links": [
     "https://lorenzopapa2.github.io/orbit-ledger-x7/"
