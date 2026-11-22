@@ -1,157 +1,165 @@
 {
- "updatedAt": "2026-11-21 22:39:35 CST",
+ "updatedAt": "2026-11-22 22:35:01 CST",
  "items": [
   {
    "bot": "珠海学院",
    "key": "珠海学院:SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
    "text": "SIS 登录失效已暂停抓取，需主人回复「SIS 好了」后恢复",
    "since": "2026-09-23",
-   "days": 60,
-   "lastSeen": "2026-11-21"
+   "days": 61,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "珠海学院",
    "key": "珠海学院:学生 Gmail 在 bot 浏览器已登出，需主人重新登录",
    "text": "学生 Gmail 今早确认登录的不是学生账号，早晚同步均跳过，需主人登录学生账号",
    "since": "2026-10-05",
-   "days": 48,
-   "lastSeen": "2026-11-21"
+   "days": 49,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "珠海学院",
    "key": "珠海学院:学校 Outlook / Moodle 的 Microsoft 登录已失效，需重新登录",
    "text": "今日早晚学校 Outlook 与 Moodle 的 Microsoft 登录仍失效，需在珠海学院对话里重新登录学校账号后才能继续同步",
    "since": "2026-11-16",
-   "days": 6,
-   "lastSeen": "2026-11-21"
+   "days": 7,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "新港人",
    "key": "新港人:知乎禁言约7天（推断10/02前后解除），2答+1专栏草稿未发；等主人回复「知乎恢复」",
    "text": "知乎熔断仍开、今日跳过发布；等主人回复「知乎恢复」并核验可发后再开",
    "since": "2026-09-26",
-   "days": 57,
-   "lastSeen": "2026-11-21"
+   "days": 58,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "新港人",
    "key": "新港人:YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked",
    "text": "YouTube 书单上传卡住：Studio 已登录但 DevTools WebSocket 403，任务标 blocked（需在 Mac 上修好调试端口或换上传方式后回「修好了」）",
    "since": "2026-09-23",
-   "days": 60,
-   "lastSeen": "2026-11-21"
+   "days": 61,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "新港人",
    "key": "新港人:小红书每日发布例行仍为停用",
    "text": "小红书每日发布例行仍为停用",
    "since": "2026-09-23",
-   "days": 60,
-   "lastSeen": "2026-11-21"
+   "days": 61,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "Hermes",
    "key": "Hermes:JobsDB Cloudflare 已升级为首页和详情页也被拦截",
-   "text": "JobsDB Cloudflare 仍拦截该机搜索 API 以及详情页（今日简报已核验：搜索 API 仍 403）；完整增量抓取仍待主人处理拦截",
+   "text": "JobsDB Cloudflare 仍拦截该机搜索 API 以及详情页；今日简报未见，未能再核验。完整增量抓取仍待主人处理拦截",
    "since": "2026-11-15",
-   "days": 7,
-   "lastSeen": "2026-11-21"
+   "days": 8,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "Hermes",
    "key": "Hermes:劳工处空缺咭令牌失效，需确认网站并授权排查 scraper session",
-   "text": "劳工处空缺咭今日令牌失效 79 次（相关在线 41→1、新 0，不能据此判断无新岗）；请打开 jobs.gov.hk 确认空缺咭能否点开，若网站正常，授权排查 scraper 的劳工处 session/令牌",
+   "text": "劳工处空缺咭令牌失效（11/21 曾失效 79 次，相关在线 41→1、新 0，不能据此判断无新岗）；今日简报未见，未能再核验。请打开 jobs.gov.hk 确认空缺咭能否点开，若网站正常，授权排查 scraper 的劳工处 session/令牌",
    "since": "2026-11-21",
+   "days": 2,
+   "lastSeen": "2026-11-22"
+  },
+  {
+   "bot": "Hermes",
+   "key": "Hermes:今日香港职位每日简报漏跑，需确认例行是否正常触发",
+   "text": "香港职位每日简报（每天 9:15）今日本机未见落盘（无 2026-11-22 简报），也无该 Bot 的当日共享汇报，按例行应已跑过，标漏跑",
+   "since": "2026-11-22",
    "days": 1,
-   "lastSeen": "2026-11-21"
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "境外医疗",
    "key": "境外医疗:每月事实数据保鲜今日未见落盘",
    "text": "每月 1 日的事实数据保鲜例行 11/1 未见产出，至今日仍未确认是否已跑或并入双周复查",
    "since": "2026-11-01",
-   "days": 21,
-   "lastSeen": "2026-11-21"
+   "days": 22,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 10/06 重复推文待主人删除",
    "text": "X 上 10/06 有 1 条重复推文仍未删除，等主人决定是否删掉",
    "since": "2026-10-06",
-   "days": 47,
-   "lastSeen": "2026-11-21"
+   "days": 48,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 10/22 重复推文待主人删除",
    "text": "X 上 10/22 post2（enamel 杯）误发重复 1 条，等主人确认是否删除",
    "since": "2026-10-22",
-   "days": 31,
-   "lastSeen": "2026-11-21"
+   "days": 32,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 10/24 重复推文待主人删除",
    "text": "X 上 10/24 post1 因点击延迟被发了两次，重复 1 条等主人确认是否删除",
    "since": "2026-10-24",
-   "days": 29,
-   "lastSeen": "2026-11-21"
+   "days": 30,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 10/30 重复推文待主人删除",
    "text": "X 上 10/30 post1 首次发布未在主页显示、重试后重复 1 条，等主人确认是否删除",
    "since": "2026-10-30",
-   "days": 23,
-   "lastSeen": "2026-11-21"
+   "days": 24,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 11/03 重复推文待主人删除",
    "text": "X 上 11/03 post1（皮革营火手套）首次发布未在主页显示、重试后重复 1 条，等主人确认是否删除",
    "since": "2026-11-03",
-   "days": 19,
-   "lastSeen": "2026-11-21"
+   "days": 20,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 11/05 重复推文待主人删除",
    "text": "X 上 11/05 post4（法压壶教程）因 FB 例行抢占标签页被重复发出 1 条，等主人确认是否删除",
    "since": "2026-11-05",
-   "days": 17,
-   "lastSeen": "2026-11-21"
+   "days": 18,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X 11/09 重复/残缺推文待主人删除",
    "text": "X 上 11/09 因草稿粘滞和延迟可见，误留 4 条（2 条重复 + 2 条残缺），等主人确认是否删除",
    "since": "2026-11-09",
-   "days": 13,
-   "lastSeen": "2026-11-21"
+   "days": 14,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:X Cloudflare 安全验证阻断后续发帖",
-   "text": "X 例行仍暂停，今日未重试；连续第 9 天。需主人在 box 浏览器以 @ridgebrewcoff 完成 Cloudflare 验证并重新启用例行后再说可以重试",
+   "text": "X 例行仍暂停，今日未重试；连续第 10 天。需主人在 box 浏览器以 @ridgebrewcoff 完成 Cloudflare 验证并重新启用例行后再说可以重试",
    "since": "2026-11-13",
-   "days": 9,
-   "lastSeen": "2026-11-21"
+   "days": 10,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:Pinterest 在售商品队列已空，需补生成图钉",
    "text": "Pinterest 在库商品队列仍空（11/14 发完后今日目标 10 / 实发 0），需主人确认按在售商品生成至少 30 条 product:<handle>:pin<n> 图钉；不要跑 Mac 上的 pinterest_queue_publish.py",
    "since": "2026-11-16",
-   "days": 6,
-   "lastSeen": "2026-11-21"
+   "days": 7,
+   "lastSeen": "2026-11-22"
   },
   {
    "bot": "shopify",
    "key": "shopify:Facebook 登录墙阻断发帖",
-   "text": "Facebook 例行仍暂停，今日未重试；登录墙自 11/17 起连续第 5 天，daily_target 已降至 1。需主人在 box 浏览器登录 Ridgebrew 主页后恢复例行并补发积压草稿",
+   "text": "Facebook 例行仍暂停，今日未重试；登录墙自 11/17 起连续第 6 天，daily_target 已降至 1。需主人在 box 浏览器登录 Ridgebrew 主页后恢复例行并补发积压草稿",
    "since": "2026-11-17",
-   "days": 5,
-   "lastSeen": "2026-11-21"
+   "days": 6,
+   "lastSeen": "2026-11-22"
   }
  ]
 }
